@@ -1,8 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const styles={
+    app:{
+        fontWeight:'bold',
+        color:'#999999'
+    }
+}
+
+/**
+ * Should be like this
+ */
+class App extends Component{
+    render(){
+        return (
+            <h1 style={styles.app}>Hello world</h1>
+        )
+    }
+}
+
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+);
