@@ -13,5 +13,11 @@ class ShoppingList extends React.Component{
                 </ul>
             </div>
         )
+
+        //Equivalent to below code
+        // return(
+        //     React.createElement('div',{className:'shopping-list'},
+        //     React.createElement('h1',/**/))
+        // )
     };
 }
